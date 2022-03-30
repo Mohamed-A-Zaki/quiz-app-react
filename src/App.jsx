@@ -27,7 +27,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("quiz-app-react/json/api.json")
+      .get("/quiz-app-react/json/api.json")
       .then(({ data }) => {
         setQuestions(data);
       })
